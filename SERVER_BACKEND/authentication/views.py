@@ -180,7 +180,7 @@ class ChangePasswordView(APIView):
 
         if serializer.is_valid():
             user=request.user
-            user.set_password(data["new_password"])
+            user.set_password(request.data["new_password"])
             user.save()
 
             return Response(status=status.HTTP_204_NO_CONTENT)

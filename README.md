@@ -9,3 +9,5 @@
 - Compressed the users' uploaded images to optimize storage.
 
 - Implemented server-side pagination in the Django REST API and integrated infinite scrolling queries in the React frontend for efficient and scalable data loading.
+
+- Containerized the application using Dockerfiles and Docker Compose.
